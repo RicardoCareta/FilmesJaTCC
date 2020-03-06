@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.os10.tcc.filmesja.Activitys.InicioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exibir Filmes Depois que Programar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="507dp"
+        android:layout_marginTop="60dp">
+
+        <GridLayout
+            android:id="@+id/gridLayoutFilmes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/txtPesquisarMidia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:hint="Pesquisar midia"
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+</FrameLayout>

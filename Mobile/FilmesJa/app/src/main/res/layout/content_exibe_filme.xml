@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.os10.tcc.filmesja.Activitys.ExibeFilmeActivity"
+    tools:showIn="@layout/activity_exibe_filme">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgTelaFilme"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/drawer_list_selector"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/txtNomeMidia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXEMPLO"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/imgTelaFilme"
+            android:layout_alignStart="@+id/imgTelaFilme" />
+
+        <TextView
+            android:id="@+id/txtElenco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELENCO"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/lblDirecao"
+            android:layout_toEndOf="@+id/lblFavorito" />
+
+        <TextView
+            android:id="@+id/lblElenco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Elenco:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtSinopse"
+            android:layout_alignStart="@+id/txtSinopse" />
+
+        <TextView
+            android:id="@+id/lblDirecao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direção:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/lblElenco"
+            android:layout_alignStart="@+id/lblElenco" />
+
+        <TextView
+            android:id="@+id/txtDirecao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECAO"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/lblDirecao"
+            android:layout_alignBottom="@+id/lblDirecao"
+            android:layout_alignStart="@+id/txtElenco" />
+
+        <TextView
+            android:id="@+id/txtAnoExibe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtSinopse"
+            android:layout_alignStart="@+id/txtSinopse"
+            android:layout_below="@+id/txtNomeMidia"
+            android:layout_marginTop="51dp"
+            android:text="Ano :"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSinopse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imgTelaFilme"
+            android:layout_below="@+id/txtAnoExibe"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:text="Sinopse :"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lblFavorito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/lblDirecao"
+            android:layout_below="@+id/lblDirecao"
+            android:layout_marginTop="22dp"
+            android:text="Minha lista"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/imgButtonDepre"
+            android:layout_width="65sp"
+            android:layout_height="55sp"
+            android:layout_alignStart="@+id/lblFavorito"
+            android:layout_alignTop="@+id/imgButtonMeio"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/depre" />
+
+        <ImageButton
+            android:id="@+id/imgButtonMeio"
+            android:layout_width="65sp"
+            android:layout_height="55sp"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/naquelas"
+            android:layout_below="@+id/lblFavorito"
+            android:layout_toEndOf="@+id/lblFavorito"
+            android:layout_marginStart="11dp" />
+
+        <ImageButton
+            android:id="@+id/imgButtonFeliz"
+            android:layout_width="65sp"
+            android:layout_height="55sp"
+            android:layout_alignTop="@+id/imgButtonMeio"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/imgButtonMeio"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/feliz" />
+
+        <ImageButton
+            android:id="@+id/imgButtonFavorito"
+            android:layout_width="70sp"
+            android:layout_height="60sp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/coracaovazio"
+            android:layout_below="@+id/lblDirecao"
+            android:layout_alignEnd="@+id/lblFavorito"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imgButtonFavorito"
+            android:layout_below="@+id/imgButtonFavorito"
+            android:text="Favorito"
+            tools:text="Favorito" />
+
+    </RelativeLayout>
+</ScrollView>

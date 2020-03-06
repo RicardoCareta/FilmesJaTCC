@@ -1,0 +1,84 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.os10.tcc.filmesja.Activitys.ContaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imgPerfilConta"
+        android:layout_width="165dp"
+        android:layout_height="144dp"
+        android:layout_x="122dp"
+        android:layout_y="11dp"
+        app:srcCompat="@drawable/drawer_list_selector" />
+
+    <TextView
+        android:id="@+id/lblNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="60dp"
+        android:layout_y="205dp"
+        android:text="Nome:" />
+
+    <Spinner
+        android:id="@+id/cbmIdioma"
+        android:layout_width="216dp"
+        android:layout_height="35dp"
+        android:layout_x="108dp"
+        android:layout_y="258dp" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="108dp"
+        android:layout_y="193dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="55dp"
+        android:layout_y="259dp"
+        android:text="Idioma:" />
+
+    <Button
+        android:id="@+id/txtDataConta"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_x="108dp"
+        android:layout_y="306dp"
+        android:background="@drawable/drawer_list_selector"
+        android:text="______"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:id="@+id/btnSalvarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="86dp"
+        android:layout_y="409dp"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btnExcluirConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="410dp"
+        android:text="Excluir Conta" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="85dp"
+        android:layout_height="34dp"
+        android:layout_x="21dp"
+        android:layout_y="307dp"
+        android:text="Data Nascimento:" />
+
+</AbsoluteLayout>

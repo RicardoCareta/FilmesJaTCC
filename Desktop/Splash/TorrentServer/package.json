@@ -1,0 +1,11 @@
+{
+  "name": "torrent-server",
+  "version": "1.0.0",
+  "description": "simple server torrent tc",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "author": "PM",
+  "license": "ISC"
+}

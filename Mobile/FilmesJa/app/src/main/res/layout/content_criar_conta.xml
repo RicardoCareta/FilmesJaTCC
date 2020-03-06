@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.os10.tcc.filmesja.Activitys.CriarContaActivity"
+    tools:showIn="@layout/activity_criar_conta">
+
+    <Button
+        android:id="@+id/btnDataNasc"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="293dp"
+        android:background="@drawable/drawer_list_selector"
+        android:text="______"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/cbmIdiomaCriarConta"
+        android:layout_alignEnd="@+id/cbmIdiomaCriarConta" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="306dp"
+        android:text="Data Nascimento:"
+        android:textSize="18sp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/cbmIdiomaCriarConta"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/txtCriarContaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto:"
+        android:textSize="18sp"
+        android:layout_above="@+id/imgCriarContaFoto"
+        android:layout_marginBottom="13dp"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_toStartOf="@+id/imgCriarContaFoto" />
+
+    <ImageView
+        android:id="@+id/imgCriarContaFoto"
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:layout_above="@+id/cbmIdiomaCriarConta"
+        android:layout_alignStart="@+id/txtCriarContaNome"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/drawer_list_selector" />
+
+    <Button
+        android:id="@+id/btnEscolherFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolher foto"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/imgCriarContaFoto"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imgCriarContaFoto" />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idioma:"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/txtCriarContaNome"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="164dp" />
+
+    <Spinner
+        android:id="@+id/cbmIdiomaCriarConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignEnd="@+id/imgCriarContaFoto"
+        android:layout_toEndOf="@+id/textView7" />
+
+</RelativeLayout>

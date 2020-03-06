@@ -1,0 +1,33 @@
+
+	<script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
+	<script>
+		function getParameterByName(name, url) {
+		    if (!url) url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		function load(){
+			var client = new WebTorrent()
+
+			var torrentId = document.getElementById("hdnValor").value
+
+			console.log(torrentId);
+
+			client.add(torrentId, function (torrent) {
+			  // Torrents can contain many files. Let's use the .mp4 file
+			  var file = torrent.files.find(function (file) {
+			    return file.name.endsWith('.mp4')
+			  })
+
+			  // Display the file by adding it to the DOM. Supports video, audio, image, etc. files
+			  file.appendTo('body')
+			})
+		}
+	</script>
+	<body onload="load()">
+
+	</body>
